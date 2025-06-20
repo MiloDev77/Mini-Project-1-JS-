@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Projek Pertama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="warnanotif" id="warnanotif"></div>
+    <section class="pertama">
+      <h1>Gunting Batu Kertas!</h1>
+      <p id="outputteks">
+        Permainan klasik yang sangat umum bagi semua orang<br />Coba tebaklah!
+        Apakah kamu orang yang beruntung?
+      </p>
+      <div class="hasiltebakan" id="outputdiv">
+        <div class="outputgambar" id="outputgambar"></div>
+      </div>
+      <div class="pilihan">
+        <div>
+          <form class="form" action="#">
+            <input type="text" id="tebakan" placeholder="Batu/Gunting/Kertas" />
+            <button onclick="ketik()">Tebak!</button>
+          </form>
+        </div>
+        <div class="dropdown-container">
+          <button class="dropdown-button">Pilih Salah Satu</button>
+          <div class="dropdown-options">
+            <button type="submit" onclick="pilihan('gunting')">gunting</button>
+            <button type="submit" onclick="pilihan('batu')">batu</button>
+            <button type="submit" onclick="pilihan('kertas')">Kertas</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="kedua">
+      <div class="glass">
+        <div class="teks">
+          <h2>Hitung Nilai</h2>
+          <h2>Kelas X</h2>
+        </div>
+        <div class="glassdalem">
+          <input
+            type="text"
+            id="nama"
+            placeholder="Masukkan nama"
+            class="inputdata"
+          />
+          <br />
+          <input type="text" id="kelas" placeholder="Kelas" class="inputdata" />
+          <br />
+          <button class="kirimnilai" id="kirimnilai" onclick="hitung()">
+            Hitung Rata-rata Nilai!
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
